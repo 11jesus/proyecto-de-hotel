@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1b0d4fcd0a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagenes/logo2.png" type="image/x-icon">
+    <title>Habitacion | Hotelín</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img width="120px" src="imagenes/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-2 fw-bold" aria-current="page" href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 fw-bold" aria-current="page" href="hoteles.html">
+                                Hoteles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 fw-bold" aria-current="page" href="tipohabitaciones.html">
+                                Tipo de habitaciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 fw-bold" aria-current="page" href="acomodaciones.html">
+                                Acomodaciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-5 container">
+        <div class="shadow p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Habitacion</h2>
+                </div>
+                <div class="col-md-8 ">
+                    <div class="d-flex justify-content-end">
+                        <a href="crearhabitacion.html" class="btn btn-success"><i class="fa-solid fa-circle-plus"></i><span class="ms-2 fw-bold">Crear Habitación</span></a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-hover table-bordered shadow">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col" class="text-uppercase">Tipo</th>
+                        <th scope="col" class="text-uppercase">Acomodación</th>
+                        <th scope="col" class="text-uppercase">Cantidad</th>
+                        <th scope="col" class="text-uppercase">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-uppercase">Estandar</td>
+                        <td  class="text-uppercase">Doble</td>
+                        <td>4</td>
+                        <td>
+                            <a class="btn btn-warning" href="editarhabitacion.html">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                            <a class="btn btn-danger" href="">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
